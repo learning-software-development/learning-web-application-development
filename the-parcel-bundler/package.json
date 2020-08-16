@@ -1,0 +1,21 @@
+{
+  "name": "the-parcel-bundler",
+  "version": "1.0.0",
+  "description": "The Parcel Bundler - A SUPER Easy JavaScript Bundler for your Projects",
+  "private": true,
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [
+    "tutorial",
+    "parcel"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "scrollmagic": "^2.0.7"
+  }
+}
