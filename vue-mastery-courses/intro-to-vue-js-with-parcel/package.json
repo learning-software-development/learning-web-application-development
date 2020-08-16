@@ -1,0 +1,38 @@
+{
+  "name": "intro-to-vue-js-with-parcel",
+  "description": "Learning Vue with Parcel and Yarn 1",
+  "version": "0.1.0",
+  "private": true,
+  "keywords": [
+    "tutorial",
+    "vuejs",
+    "vue-mastery",
+    "parcel",
+    "yarn"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/learning-software-development/web-application-tutorials/tree/master/vue-mastery-courses/intro-to-vue-js-with-parcel"
+  },
+  "author": "Quintin Henn <quintin.henn@gmail.com> (http://skerwe.web.za)",
+  "license": "Unlicense",
+  "scripts": {
+    "start": "yarn copy:dev-assets && parcel serve app/index.html -d build",
+    "build": "yarn clean:dist && yarn copy:dist-assets && parcel build app/index.html -d dist",
+    "copy:dev-assets": "cpx app/images/* build/images",
+    "copy:dist-assets": "cpx app/images/* dist/images",
+    "clean:dev": "rimraf build",
+    "clean:dist": "rimraf dist"
+  },
+  "dependencies": {
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "cpx": "^1.5.0",
+    "parcel-bundler": "^1.12.4"
+  },
+  "alias": {
+    "vue": "./node_modules/vue/dist/vue.common.js"
+  }
+}
