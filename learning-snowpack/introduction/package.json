@@ -1,0 +1,11 @@
+{
+  "name": "introduction",
+  "private": true,
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  },
+  "devDependencies": {
+    "snowpack": "^2.17.1"
+  }
+}
