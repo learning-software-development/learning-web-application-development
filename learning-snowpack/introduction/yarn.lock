@@ -416,6 +416,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"canvas-confetti@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "canvas-confetti@npm:1.4.0"
+  checksum: 12552a8d7665a1879755ea666c72927bf881724ff0f1800894226afabdd5482aa3c8eae677cb00cf9e8749504b7ae65822de05d30144d23a4be37275ff66e8a0
+  languageName: node
+  linkType: hard
+
 "caseless@npm:~0.12.0":
   version: 0.12.0
   resolution: "caseless@npm:0.12.0"
@@ -1154,6 +1161,7 @@ fsevents@~2.1.2:
   version: 0.0.0-use.local
   resolution: "introduction@workspace:."
   dependencies:
+    canvas-confetti: ^1.4.0
     snowpack: ^2.17.1
   languageName: unknown
   linkType: soft
