@@ -9,7 +9,7 @@
     "vue-mastery",
     "vue-cli"
   ],
-  "author": "Quintin Henn <quintin.henn@gmail.com> (http://skerwe.web.za)",
+  "author": "Quintin Henn (http://skerwe.web.za)",
   "license": "Unlicense",
   "scripts": {
     "serve": "vue-cli-service serve",

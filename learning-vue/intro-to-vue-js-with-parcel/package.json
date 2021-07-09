@@ -14,7 +14,7 @@
     "type": "git",
     "url": "https://github.com/learning-software-development/web-application-tutorials/tree/master/vue-mastery-courses/intro-to-vue-js-with-parcel"
   },
-  "author": "Quintin Henn <quintin.henn@gmail.com> (http://skerwe.web.za)",
+  "author": "Quintin Henn (http://skerwe.web.za)",
   "license": "Unlicense",
   "scripts": {
     "start": "yarn copy:dev-assets && parcel serve app/index.html -d build",
