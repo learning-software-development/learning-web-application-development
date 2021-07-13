@@ -1,46 +1,61 @@
 import Backbone from 'backbone';
 
-const KermitModel = Backbone.Model.extend({
-  url: '/muppets/1',
+const PokemonLinkModel = Backbone.Model.extend({
   defaults: {
-    id: null,
     name: null,
-    occupation: null
+    url: null
   }
 });
 
-let kermit = new KermitModel();
+const PokemonCollection = Backbone.Collection.extend({
+  url: 'https://pokeapi.co/api/v2/pokemon',
+  model: PokemonLinkModel,
 
-kermit.fetch().then(() => {
-  kermit.get('name'); // >> "Kermit"
-  kermit.get('occupation'); // >> "being green"
-  kermit.set('occupation', 'muppet ringleader');
-  kermit.save();
-});
-
-const MuppetModel = Backbone.Model.extend({
-  defaults: {
-    id: null,
-    name: null,
-    occupation: null
-  }
-});
-
-const MuppetsCollection = Backbone.Collection.extend({
-  url: '/muppets',
-  model: MuppetModel,
   parse: (data) => {
-    return data.muppets;
+    console.dir(data);
+    return data.results;
   }
 });
 
-let muppets = new MuppetsCollection();
+let pokemons = new PokemonCollection();
 
-muppets.fetch().then(function() {
-  console.log(muppets.length); // >> length: 2
+pokemons.fetch().then(() => {
+  console.log(pokemons.length);
+
+  console.dir(pokemons.at(0));
+  console.dir(pokemons.at(19));
+  console.dir(pokemons.findWhere({name: 'squirtle'}));
 });
 
-muppets.get(1); // >> Returns the "Kermit" model, by id reference
-muppets.get(2); // >> Returns the "Gonzo" model, by id reference
-muppets.at(0); // >> Returns the "Kermit" model, by index
-muppets.findWhere({name: 'Gonzo'}); // >> returns the "Gonzo" model
+
+let PokemonsListView = Backbone.View.extend({
+  el: '#pokemon-list',
+
+  initialize: () => {
+    console.log(this.collection);
+  }
+});
+
+const PokemonModel = Backbone.Model.extend({
+  defaults: {
+    id: null,
+    name: null
+  }
+});
+
+const PokemonsListItemView = Backbone.View.extend({
+  tagName: 'li',
+  className: 'pokemon',
+
+  initialize: () => {
+    console.log(this.model);
+  }
+});
+
+// Create Model and View instances:
+let pokemonModel = new PokemonModel();
+let PokemonView = new PokemonsListItemView({model: pokemonModel});
+let PokemonsView = new PokemonsListView({collection: pokemons});
+
+// Append content into the view's container element:
+pokemonsList.$el.append('<li>Hello World</li>');

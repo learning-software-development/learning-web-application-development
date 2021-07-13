@@ -2,7 +2,7 @@
   "name": "backbone-primer",
   "version": "0.1.0",
   "description": "Backbone, The Primer",
-  "main": "app.js",
+  "main": "main.js",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
