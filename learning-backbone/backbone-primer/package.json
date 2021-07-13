@@ -1,0 +1,24 @@
+{
+  "name": "backbone-primer",
+  "version": "0.1.0",
+  "description": "Backbone, The Primer",
+  "main": "app.js",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "learning",
+    "backbone"
+  ],
+  "author": "Quintin Henn (http://skerwe.web.za)",
+  "license": "ISC",
+  "dependencies": {
+    "backbone": "^1.4.0",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "snowpack": "^3.8.1"
+  }
+}
