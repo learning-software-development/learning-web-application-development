@@ -8,7 +8,7 @@ Online tutorials and courses for various web frameworks and technologies, which 
 2. :file_folder: [Learning Angular](learning-angular/)
 3. :construction: Learning EmberJS
 4. :construction: Learning React
-5. :construction: [Learning BackboneJS](learning-backbone/)
+5. :file_folder: [Learning BackboneJS](learning-backbone/)
 6. :construction: Learning ExpressJS
 7. :construction: Learning SailsJS
 
