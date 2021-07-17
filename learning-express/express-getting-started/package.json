@@ -1,0 +1,18 @@
+{
+  "name": "express-getting-started",
+  "version": "1.0.0",
+  "description": "ExpressJS getting started tutorial",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "expressjs",
+    "getting-started"
+  ],
+  "author": "Quintin Henn <quintin.henn@gmail.com> (http://skerwe.web.za)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

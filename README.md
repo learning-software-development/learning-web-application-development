@@ -2,15 +2,18 @@
 
 Online tutorials and courses for various web frameworks and technologies, which I completed to learn new technologies and to grow my skills.
 
+:heavy_check_mark: Completed  
+:o: Incomplete
+
 ## :beginner: Web Application Tutorials
 
 1. :file_folder: [Learning Vue](learning-vue/)
 2. :file_folder: [Learning Angular](learning-angular/)
-3. :construction: Learning EmberJS
-4. :construction: Learning React
+3. :file_folder: [Learning EmberJS](learning-ember/)
+4. :file_folder: [Learning React](learning-react/)
 5. :file_folder: [Learning BackboneJS](learning-backbone/)
-6. :construction: Learning ExpressJS
-7. :construction: Learning SailsJS
+6. :file_folder: [Learning ExpressJS](learning-express/)
+7. :file_folder: [Learning SailsJS](learning-sails/)
 
 ## :beginner: Learning Web Application Development Tools
 
