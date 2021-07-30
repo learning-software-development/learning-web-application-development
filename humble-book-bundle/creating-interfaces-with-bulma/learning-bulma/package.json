@@ -1,7 +1,7 @@
 {
-  "name": "project-test-pnpm",
+  "name": "learning-bulma",
   "version": "0.1.0",
-  "description": "Learning PNPM and Bulma",
+  "description": "Learning Bulma",
   "main": "index.js",
   "scripts": {
     "start": "snowpack dev",
@@ -10,9 +10,7 @@
   },
   "keywords": [
     "learning",
-    "pnpm",
-    "bulma",
-    "snowpack"
+    "bulma"
   ],
   "author": "Quintin Henn <http://skerwe.web.za>",
   "license": "ISC",

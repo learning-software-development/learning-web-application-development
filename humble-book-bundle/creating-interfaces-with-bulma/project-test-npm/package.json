@@ -1,6 +1,6 @@
 {
   "name": "project-test-npm",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "private": "true",
   "scripts": {
@@ -8,7 +8,12 @@
     "build": "parcel build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "learning",
+    "npm",
+    "bulma",
+    "parcel"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
